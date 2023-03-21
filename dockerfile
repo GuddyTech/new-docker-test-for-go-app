@@ -11,7 +11,7 @@ RUN go mod download && go mod verify
 
 COPY /main.go .
 
-RUN go build -v .
+RUN go build main.go
 
 EXPOSE 8080
 
